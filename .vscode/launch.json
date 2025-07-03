@@ -1,0 +1,114 @@
+{
+    "configurations": [
+        
+        {
+            "type": "java",
+            "name": "MoneyServiceApplication",
+            "request": "launch",
+            "mainClass": "com.wallet.money.MoneyServiceApplication"
+        },
+        {
+            "type": "java",
+            "name": "Spring Boot-ServiceRegisterApplication<serviceRegister>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.m1_fonda.serviceRegister.ServiceRegisterApplication",
+            "projectName": "serviceRegister",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env",
+            "vmArgs": " -Dcom.sun.management.jmxremote -Dcom.sun.management.jmxremote.port=53116 -Dcom.sun.management.jmxremote.authenticate=false -Dcom.sun.management.jmxremote.ssl=false -Dspring.jmx.enabled=true -Djava.rmi.server.hostname=localhost -Dspring.application.admin.enabled=true -Dspring.boot.project.name=serviceRegister"
+        },
+                {
+            "type": "java",
+            "name": "MoneyServiceApplication",
+            "request": "launch",
+            "mainClass": "com.wallet.money.MoneyServiceApplication",
+            "projectName": "money-service",
+            "cwd": "${workspaceFolder}/money-service",
+            "env": {},
+            "vmArgs": "-XX:+ShowCodeDetailsInExceptionMessages"
+        },
+
+        {
+            "type": "java",
+            "name": "Spring Boot-ServiceProxyApplication<serviceProxy>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.serviceProxy.ServiceProxyApplication",
+            "projectName": "serviceProxy",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        },
+        {
+            "type": "java",
+            "name": "Spring Boot-ServiceConfigurationApplication<service-configuration>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.m1_fonda.service_configuration.ServiceConfigurationApplication",
+            "projectName": "service-configuration",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        },
+        {
+            "type": "java",
+            "name": "Spring Boot-ServiceAgenceApplication<serviceAgence>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.serviceAgence.ServiceAgenceApplication",
+            "projectName": "serviceAgence",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env",
+            "vmArgs": " -Dcom.sun.management.jmxremote=false -Dspring.jmx.enabled=false -Xms512m -Xmx2g -Dserver.port=8092 -Dspring.profiles.active=dev -Djava.net.preferIPv4Stack=true -Dcom.sun.management.jmxremote.port=64453 -Dcom.sun.management.jmxremote.authenticate=false -Dcom.sun.management.jmxremote.ssl=false -Djava.rmi.server.hostname=localhost -Dspring.application.admin.enabled=true -Dspring.boot.project.name=serviceAgence"
+        },
+        {
+            "type": "java",
+            "name": "Spring Boot-ServiceUserApplication<serviceUser>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.m1_fonda.serviceUser.ServiceUserApplication",
+            "projectName": "serviceUser",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        },
+        {
+            "type": "java",
+            "name": "Spring Boot-ServiceAnnonceApplication<serviceAnnonce>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.serviceAnnonce.ServiceAnnonceApplication",
+            "projectName": "serviceAnnonce",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        },
+        {
+            "type": "java",
+            "name": "Spring Boot-ServiceDemandeApplication<serviceDemande>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.serviceDemande.ServiceDemandeApplication",
+            "projectName": "serviceDemande",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        },
+        {
+            "type": "java",
+            "name": "Spring Boot-BankCardServiceApplication<bank-card-service>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.wallet.bank_card_service.BankCardServiceApplication",
+            "projectName": "bank-card-service",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        },
+        {
+            "type": "java",
+            "name": "Spring Boot-MoneyServiceApplication<money-service>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.wallet.money.MoneyServiceApplication",
+            "projectName": "money-service",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        }
+    ]
+}
